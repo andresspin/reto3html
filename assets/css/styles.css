@@ -5,17 +5,20 @@
    margin: 0;
    padding: 0;
    height:375px;
+  
 }
 
 
 .outside{
-    height:500px;
+    height: 507px;
     width:375px;
     background-size: cover;
     background-color:lightblue;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 150px;
 }
 
 
@@ -28,6 +31,8 @@
     justify-content: center;
     border-radius: 10px;
     padding-top: 10px;
+    position: absolute;
+    right: 200px;
     
 }
 
@@ -69,5 +74,29 @@ p{
 .graytext{
     color: grey;
     font-size:x-small;
+    
+}
+
+@media screen and (max-width: 1440px) {
+    body{
+        background-color: beige;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+    }
+
+    .outside{
+        height:800px;
+        width:1040px;
+        position: absolute;
+        }
+    
+        .inside{
+            position: absolute;
+            
+            left:80px;
+        }
     
 }
